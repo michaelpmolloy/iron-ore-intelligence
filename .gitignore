@@ -218,3 +218,26 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Secrets
+.env
+.env.*
+!.env.example
+# Data: never commit raw data or source PDFs
+data/
+archive/
+*.jsonl.gz
+*.parquet
+*.pdf
+# dbt / Terraform / Databricks
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+.databricks/
+# Mac / editor
+.DS_Store
+.vscode/
